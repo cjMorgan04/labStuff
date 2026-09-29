@@ -1,10 +1,13 @@
 # labStuff
 This repo contains the collected works I collected from my work in lab. I was given permission to use these for my GITHUB. 
 
-
+####################
 PIDfunctions/PIDmain
 
-This code is designed to alter the output power in steps to reach a set power via a proportional–integral–derivative (PID) controller. This is designed to be the culmination of all of the code placed underneath this. I opted to write the controller as a class as the main function will likely be expanded
+This code is designed to alter the output power in steps to reach a set power via a proportional–integral–derivative (PID) controller. This is designed to be the culmination of all of the code placed underneath this. I opted to write the controller as a class because the main function will likely be expanded. As of writing this the core logic has been completed but actually sending these commands to the DC power supply still must be implemented.
+
+
+
 
 ###################
 Personal Note on AI
