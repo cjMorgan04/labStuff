@@ -19,7 +19,7 @@ lcd.fill(lcd.BLACK) # Screen will be black
 counter=0
 # Read loop
 while True:
-    tempC = sensor.read_temp_c()
+    tempC = sensor.read_temp()
     if tempC is not None and tempC is not False:
         tempF = tempC * 9/5 + 32
     if tempC is False:
