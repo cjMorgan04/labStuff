@@ -113,6 +113,10 @@ class PID:                                                                      
             if userChoice.strip().upper() == "Y": #the .upper() function converts lower case to upper case
                 new_temp = float(input("Enter new target temperature: "))
                 self.setpoint = new_temp
+                # Reset PID memory for the new run
+                self.integral = 0.0
+                self.previous_error = 0.0
+                self.simulation()
                 self.simulation()  # Restart the loop with the new target
             else:
                 print("Safely shutting down: Zeroing current and turning OFF output...")
