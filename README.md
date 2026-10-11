@@ -4,7 +4,9 @@ This repo contains software developed for my lab. The projects are focused on co
 ####################
 PIDfunctions/PIDmain ~ In Development
 
-This code is designed to alter the output power in steps to reach a set power via a proportional–integral–derivative (PID) controller. This is designed to be the culmination of all of the code placed underneath this. I opted to write the controller as a class because the main function will likely be expanded. As of writing this the core logic has been completed but actually sending these commands to the DC power supply still must be implemented.
+This code is designed to alter the output power in steps to reach a set power via a proportional–integral–derivative (PID) controller. This is designed to be the culmination of all of the code placed underneath this. I opted to write the controller as a class because the main function will likely be expanded.
+
+[EDIT 1] Code is now functional for the setup. Fixed the loop so it runs in real time. Initial testing showed that a integral clamp needed to be added as long runs are expected and accumulated error would prevent the voltage from dropping. The next goal is to add a graphing function.  
 
 
 ########
